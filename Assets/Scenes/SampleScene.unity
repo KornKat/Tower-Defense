@@ -8525,7 +8525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 8927348527721226560, guid: e7a10df6c6aaf424bb3d50f008eaf2b9, type: 3}
-  anotherTurretPrefab: {fileID: 8927348527721226560, guid: c0c7001f1c68a6f4a92f8500d5526bc9, type: 3}
+  anotherTurretPrefab: {fileID: 3495585749386080792, guid: 86a11f58a1289214bb195c4a65a6f640, type: 3}
 --- !u!1 &1170181350
 GameObject:
   m_ObjectHideFlags: 0
@@ -9854,7 +9854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4402507691511686695, guid: 58ba38c64de146045b0a0231f3412d84, type: 3}
       propertyPath: m_Text
-      value: Other Tower
+      value: Cannon Tower
       objectReference: {fileID: 0}
     - target: {fileID: 7287508087746532218, guid: 58ba38c64de146045b0a0231f3412d84, type: 3}
       propertyPath: m_Pivot.x
