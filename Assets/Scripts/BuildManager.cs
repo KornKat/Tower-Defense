@@ -12,6 +12,7 @@ public class BuildManager : MonoBehaviour
 
     public GameObject standardTurretPrefab;
     public GameObject anotherTurretPrefab;
+    public GameObject WizardTowerPrefab;
 
     private GameObject turretToBuild;
 
