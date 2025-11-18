@@ -8,22 +8,22 @@ public class Shop : MonoBehaviour
     public TurretBlueprint WizardTower;
 
     BuildManager buildManager;
-    public void PurchaseTower()
+    public void SelectTower()
     {
         Debug.Log("Archer Tower Selected");
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+        buildManager.SelectTurretToBuild(standardTurret);
     }
 
-    public void PurchaseAnotherTower()
+    public void SelectAnotherTower()
     {
         Debug.Log("Another Tower Selected");
-        buildManager.SetTurretToBuild(buildManager.anotherTurretPrefab);
+        buildManager.SelectTurretToBuild(AnotherTurret);
     }
 
-    public void PurchaseWizardTower()
+    public void SelectWizardTower()
     {
         Debug.Log("Wizard Tower Selected");
-        buildManager.SetTurretToBuild(buildManager.WizardTowerPrefab);
+        buildManager.SelectTurretToBuild(WizardTower);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -29,11 +29,20 @@ public class Enemy : MonoBehaviour
     {
         if (wavepointindex >= Waypoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
 
         wavepointindex++;
         target = Waypoints.points[wavepointindex];
     }
+
+    void EndPath()
+    {
+        PlayerStats.Lives--;
+        Destroy(gameObject);
+    }
+
+
+
 }
