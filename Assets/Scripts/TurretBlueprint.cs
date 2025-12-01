@@ -5,15 +5,12 @@ public class TurretBlueprint
 {
     public GameObject prefab;
     public int cost;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject upgradedPrefab;
+    public int upgradeCost;
+
+    public int GetSellAmount()
     {
-        
+        return cost / 2;
     }
 }
