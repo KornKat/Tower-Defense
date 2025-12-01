@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(levelToLoad);
         Time.timeScale = 1f;
 
+
+
     }
     
     public void Quit()

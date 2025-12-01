@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         if(PlayerStats.Lives <= 0)
         {
             EndGame();
+            
         }
     }
 
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
         GameIsOver = true;
 
         gameOverUI.SetActive(true);
+        Time.timeScale = 0f;
     }
 
 

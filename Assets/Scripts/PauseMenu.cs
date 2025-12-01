@@ -36,11 +36,15 @@ public class PauseMenu : MonoBehaviour
     {
         Toggle();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+
     }
 
     public void Menu()
     {
         SceneManager.LoadScene(backToMenu);
-    }
+        
 
+    }
+    
 }
