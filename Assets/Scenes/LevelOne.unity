@@ -10628,7 +10628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c110ba690addebe4fa4f25b12e29cfb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2372204069833730426, guid: e9fd7e8a02d25ad42bd1a6eb181cadd9, type: 3}
+  enemyPrefab: {fileID: 1495056198127657600, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
   spawnPoint: {fileID: 26396769}
   timeBetweenWaves: 8
   waveCountdownText: {fileID: 1883067653}
@@ -10705,6 +10705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 635925406}
+  backToMenu: MainMenu
 --- !u!1 &1170181350
 GameObject:
   m_ObjectHideFlags: 0

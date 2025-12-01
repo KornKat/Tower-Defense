@@ -1,15 +1,25 @@
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
 
-    public float speed = 10f;
+    public float startSpeed = 10f;
 
-    public int health = 100;
+    public float speed;
+
+    public int startHealth = 100;
+    private float health;
 
     public int value = 50;
 
+    public GameObject healthUI;
+
     public GameObject deathEffect;
+
+    [Header("Unity Stuff")]
+    public Image healthBar;
 
     private Transform target;
     private int wavepointindex = 0;
@@ -17,6 +27,9 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         target = Waypoints.points[0];
+        speed = startSpeed;
+        health = startHealth;
+        healthUI.SetActive(false);
     }
 
 
@@ -24,6 +37,10 @@ public class Enemy : MonoBehaviour
     public void TakeDamage (int amount)
     {
         health -= amount;
+        healthUI.SetActive(true);
+
+
+        healthBar.fillAmount = health / startHealth;
 
         if (health <= 0)
         {
