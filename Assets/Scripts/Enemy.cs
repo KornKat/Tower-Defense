@@ -1,4 +1,4 @@
-using UnityEditor.ShaderGraph.Internal;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,12 +14,16 @@ public class Enemy : MonoBehaviour
 
     public int value = 50;
 
+    public int damage = 1;
+
     public GameObject healthUI;
 
     public GameObject deathEffect;
 
     [Header("Unity Stuff")]
     public Image healthBar;
+
+    private bool isDead = false;
 
     private Transform target;
     private int wavepointindex = 0;
@@ -42,7 +46,7 @@ public class Enemy : MonoBehaviour
 
         healthBar.fillAmount = health / startHealth;
 
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
             Die();
         }
@@ -51,6 +55,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        isDead = true;
+
         PlayerStats.Money += value;
 
         GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
@@ -87,7 +93,7 @@ public class Enemy : MonoBehaviour
 
     void EndPath()
     {
-        PlayerStats.Lives--;
+        PlayerStats.Lives -= damage;
         WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }

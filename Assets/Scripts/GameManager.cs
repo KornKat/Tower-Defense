@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void EndGame()
+    public void EndGame()
     {
         GameIsOver = true;
 

@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
 
     public void Quit()
     {
-        EditorApplication.ExitPlaymode();
+       //EditorApplication.ExitPlaymode();
 
         Application.Quit();
     }

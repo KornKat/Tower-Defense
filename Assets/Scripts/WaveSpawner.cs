@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class WaveSpawner : MonoBehaviour
 {
     public static int EnemiesAlive = 0;
+    
 
     public Wave[] waves;
 
@@ -37,8 +38,19 @@ public class WaveSpawner : MonoBehaviour
 
         if (waveIndex == waves.Length)
         {
-            gameManager.WinLevel();
-            this.enabled = false;
+            if (PlayerStats.Lives <= 0)
+            {
+                
+                gameManager.EndGame();
+                this.enabled = false;
+
+            }
+            else
+            {
+                gameManager.WinLevel();
+                this.enabled = false;
+
+            }
         }
 
         if (countdown <= 0f)
@@ -65,15 +77,36 @@ public class WaveSpawner : MonoBehaviour
 
         for (int i = 0; i < wave.count; i++)
         {
-            SpawnEnemy(wave.enemy);
+            int enemyType = Random.Range(0, wave.enemies.Length );
+            SpawnEnemy(wave.enemies[enemyType]);
             yield return new WaitForSeconds(1f / wave.rate);
+            //SpawnSecondaryEnemy(wave.enemy);
+            //yield return new WaitForSeconds(1f / wave.secondRate);
         }
         waveIndex++;
+        PlayerStats.Rounds++;
 
-        
-    }
+        //Wave wave = waves[waveIndex];
+
+        //EnemiesAlive = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
+
+        //for (int i = 0; i < wave.count; i++)
+        //{
+            //int enemyType = Random.Range(0, wave.enemies.Length);
+            //for (int x = 0; x < wave.enemies.Length; x++)
+            //{
+               // SpawnEnemy(wave.enemies[x]);
+                //yield return new WaitForSeconds(1f / wave.rate);
+            //}
+
+        }
 
     void SpawnEnemy (GameObject enemy)
+    {
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+    }
+
+    void SpawnSecondaryEnemy(GameObject enemy)
     {
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
     }
