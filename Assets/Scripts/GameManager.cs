@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static bool GameIsOver;
 
     public GameObject gameOverUI;
+    public GameObject completeLevelUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,5 +34,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+
+    public void WinLevel()
+    {
+
+        GameIsOver = true;
+        completeLevelUI.SetActive(true);
+    }
 
 }
