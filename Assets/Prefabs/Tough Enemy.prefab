@@ -304,7 +304,7 @@ MonoBehaviour:
   speed: 20
   startHealth: 500
   value: 100
-  damage: 10
+  damage: 2
   healthUI: {fileID: 5442055349271588647}
   deathEffect: {fileID: 1617982236163035045, guid: fbedc459ca515684cbd05529e9d2852d, type: 3}
   healthBar: {fileID: 1497703187222558867}
