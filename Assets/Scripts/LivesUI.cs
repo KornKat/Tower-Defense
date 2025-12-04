@@ -14,5 +14,13 @@ public class LivesUI : MonoBehaviour
     void Update()
     {
         livesText.text = PlayerStats.Lives.ToString() + " LIVES";
+        if(PlayerStats.Lives == 1)
+        {
+            livesText.text = PlayerStats.Lives.ToString() + " LIFE";
+        }
+        if (PlayerStats.Lives <= 0)
+        {
+            livesText.text = "0 LIVES";
+        }
     }
 }

@@ -12,14 +12,15 @@ public class WaveSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     public float timeBetweenWaves = 5f;
-    private float countdown = 2f;
+    private float countdown = 5f;
 
     public Text waveCountdownText;
+    public GameObject waveCounter;
 
     public GameManager gameManager;
 
     private int waveIndex = 0;
-
+    
     
  
 
@@ -35,18 +36,24 @@ public class WaveSpawner : MonoBehaviour
         {
             return;
         }
+        else
+        {
+            waveCounter.SetActive(true);
+        }
+
+
 
         if (waveIndex == waves.Length)
         {
             if (PlayerStats.Lives <= 0)
             {
-                
                 gameManager.EndGame();
                 this.enabled = false;
 
             }
             else
             {
+                
                 gameManager.WinLevel();
                 this.enabled = false;
 
@@ -55,6 +62,7 @@ public class WaveSpawner : MonoBehaviour
 
         if (countdown <= 0f)
         {
+            waveCounter.SetActive(false);
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
             return;
@@ -64,7 +72,7 @@ public class WaveSpawner : MonoBehaviour
 
         countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
-        waveCountdownText.text = string.Format("{0:00.00}", countdown);
+        waveCountdownText.text = "NEXT WAVE IN: " + string.Format("{0:0}", countdown);
     }
 
     IEnumerator SpawnWave ()
