@@ -17360,7 +17360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemies:
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
     count: 5
     rate: 2
   - enemies:
@@ -17392,6 +17392,26 @@ MonoBehaviour:
     - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
     - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
     count: 50
+    rate: 3
+  - enemies:
+    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
+    count: 30
+    rate: 3
+  - enemies:
+    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
+    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
+    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    count: 50
+    rate: 3
+  - enemies:
+    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
+    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
+    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
+    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
+    count: 80
     rate: 3
   spawnPoint: {fileID: 26396769}
   timeBetweenWaves: 5.5
