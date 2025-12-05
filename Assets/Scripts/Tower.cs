@@ -20,11 +20,13 @@ public class Tower : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform firePoint;
+    public AudioSource buildNoise;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        buildNoise.Play();
     }
 
     void UpdateTarget()

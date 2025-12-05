@@ -374,6 +374,7 @@ MonoBehaviour:
   damage: 2
   healthUI: {fileID: 4959747136180879933}
   deathEffect: {fileID: 1617982236163035045, guid: fbedc459ca515684cbd05529e9d2852d, type: 3}
+  introSound: {fileID: 8736740647790617134}
   healthBar: {fileID: 1372624357058376661}
 --- !u!82 &8736740647790617134
 AudioSource:
@@ -385,8 +386,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 999bf1718cf01014ca56880efdae6f67, type: 3}
+  m_Resource: {fileID: 8300000, guid: 999bf1718cf01014ca56880efdae6f67, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

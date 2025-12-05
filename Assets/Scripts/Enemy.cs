@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
 
     public GameObject deathEffect;
 
-    public AudioSource deathSound;
+    public AudioSource introSound;
 
     [Header("Unity Stuff")]
     public Image healthBar;
@@ -36,6 +36,7 @@ public class Enemy : MonoBehaviour
         speed = startSpeed;
         health = startHealth;
         healthUI.SetActive(false);
+        introSound.Play();
     }
 
 
@@ -44,7 +45,6 @@ public class Enemy : MonoBehaviour
     {
         health -= amount;
         healthUI.SetActive(true);
-
 
         healthBar.fillAmount = health / startHealth;
 
@@ -60,8 +60,6 @@ public class Enemy : MonoBehaviour
         isDead = true;
 
         PlayerStats.Money += value;
-        deathSound = GetComponent<AudioSource>();
-        deathSound.Play();
 
         GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);

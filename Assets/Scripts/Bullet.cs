@@ -11,6 +11,10 @@ public class Bullet : MonoBehaviour
 
     public float explosionRadius = 0f;
     public GameObject impactEffect;
+    public AudioSource shotSound;
+
+
+
 
     public void Seek(Transform _target)
     {
@@ -19,7 +23,7 @@ public class Bullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        shotSound.Play();
     }
 
     // Update is called once per frame

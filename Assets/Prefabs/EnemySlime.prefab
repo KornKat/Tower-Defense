@@ -272,7 +272,7 @@ MonoBehaviour:
   damage: 1
   healthUI: {fileID: 8325030346567875162}
   deathEffect: {fileID: 1617982236163035045, guid: bc25dbc2eb38cb04187f33b7588285dc, type: 3}
-  deathSound: {fileID: -2203164946501943317}
+  introSound: {fileID: -2203164946501943317}
   healthBar: {fileID: 1663506536584564417}
 --- !u!82 &-2203164946501943317
 AudioSource:
@@ -284,8 +284,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ead35a9edf33206419f963f7c241b1b1, type: 3}
-  m_Resource: {fileID: 8300000, guid: ead35a9edf33206419f963f7c241b1b1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 322d6a2e7177a82408988799d6ef6ce9, type: 3}
+  m_Resource: {fileID: 8300000, guid: 322d6a2e7177a82408988799d6ef6ce9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -299,7 +299,7 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
+  BypassEffects: 1
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:

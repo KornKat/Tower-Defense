@@ -21,6 +21,8 @@ public class WaveSpawner : MonoBehaviour
     public GameObject waveTracker;
 
     public GameManager gameManager;
+    public AudioSource winSound;
+
 
     private int waveIndex = 0;
     
@@ -58,6 +60,7 @@ public class WaveSpawner : MonoBehaviour
             {
                 
                 gameManager.WinLevel();
+                winSound.Play();
                 this.enabled = false;
 
             }
