@@ -17,6 +17,9 @@ public class WaveSpawner : MonoBehaviour
     public Text waveCountdownText;
     public GameObject waveCounter;
 
+    public Text waveTrackerText;
+    public GameObject waveTracker;
+
     public GameManager gameManager;
 
     private int waveIndex = 0;
@@ -73,11 +76,13 @@ public class WaveSpawner : MonoBehaviour
         countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
         waveCountdownText.text = "NEXT WAVE IN: " + string.Format("{0:0}", countdown);
+        
     }
 
     IEnumerator SpawnWave ()
     {
         PlayerStats.Rounds++;
+        waveTrackerText.text = "WAVE: " + PlayerStats.Rounds.ToString() + "/10";
 
         Wave wave = waves[waveIndex];
 

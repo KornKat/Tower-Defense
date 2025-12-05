@@ -13297,6 +13297,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6067534047911637482, guid: d0755e1b47b09bd4ba2e3b1ca2b4d791, type: 3}
   m_PrefabInstance: {fileID: 1154788316}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &841530295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841530296}
+  - component: {fileID: 841530299}
+  - component: {fileID: 841530298}
+  - component: {fileID: 841530297}
+  m_Layer: 5
+  m_Name: WaveTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &841530296
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841530295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1406985782}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -313, y: -16}
+  m_SizeDelta: {x: 170, y: 31.6629}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &841530297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841530295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &841530298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841530295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 70
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: WAVE 1/10
+--- !u!222 &841530299
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841530295}
+  m_CullTransparentMesh: 0
 --- !u!4 &844611186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6067534047911637482, guid: d0755e1b47b09bd4ba2e3b1ca2b4d791, type: 3}
@@ -14080,8 +14175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -40.264}
-  m_SizeDelta: {x: 500, y: 80.5275}
+  m_AnchoredPosition: {x: 0, y: -42}
+  m_SizeDelta: {x: 450, y: 41.1038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &920347901
 MonoBehaviour:
@@ -14114,7 +14209,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14139,7 +14234,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920347899}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1001 &923457341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17360,37 +17455,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemies:
-    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
     count: 5
     rate: 2
   - enemies:
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
     count: 10
     rate: 2
   - enemies:
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
     count: 3
     rate: 2
   - enemies:
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
     count: 10
     rate: 2
   - enemies:
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
     count: 30
     rate: 3
   - enemies:
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
     count: 50
     rate: 3
   - enemies:
@@ -17400,23 +17495,29 @@ MonoBehaviour:
   - enemies:
     - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
     - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
     count: 50
     rate: 3
   - enemies:
     - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
     - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
-    - {fileID: 7285867715101298177, guid: 3e5b5313bf962be48afcb7412fb330d6, type: 3}
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
-    - {fileID: 7285867715101298177, guid: 57e1eec3463cef14eba90097b241bafa, type: 3}
+    - {fileID: 7285867715101298177, guid: 917d2beb509a6884fa215a265ecef19a, type: 3}
+    - {fileID: 7285867715101298177, guid: 5cf8c28470b508f4289706e01159c42f, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
+    - {fileID: 7285867715101298177, guid: 6743a07e5570889459276981f762669e, type: 3}
     count: 80
+    rate: 3
+  - enemies:
+    - {fileID: 7285867715101298177, guid: 6a8452e181f041042b8463d68abfb512, type: 3}
+    count: 1
     rate: 3
   spawnPoint: {fileID: 26396769}
   timeBetweenWaves: 5.5
   waveCountdownText: {fileID: 920347902}
   waveCounter: {fileID: 920347899}
+  waveTrackerText: {fileID: 841530298}
+  waveTracker: {fileID: 841530295}
   gameManager: {fileID: 1160035778}
 --- !u!4 &1160035775
 Transform:
@@ -20796,6 +20897,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 841530296}
   - {fileID: 920347900}
   - {fileID: 2009025930}
   - {fileID: 1480518090}

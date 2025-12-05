@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 901465955243337328}
   - component: {fileID: 3562966097607592672}
   m_Layer: 0
-  m_Name: EnemyBat
+  m_Name: EnemyBat 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,7 +207,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7127358426289093972}
@@ -294,7 +294,7 @@ MonoBehaviour:
   startSpeed: 40
   speed: 35
   startHealth: 80
-  value: 10
+  value: 40
   damage: 2
   healthUI: {fileID: 5442055349271588647}
   deathEffect: {fileID: 1617982236163035045, guid: fbedc459ca515684cbd05529e9d2852d, type: 3}
