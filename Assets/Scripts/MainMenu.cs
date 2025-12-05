@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 
     public string levelToLoad = "LevelOne";
     public string levelSelect = "LevelSelect";
+    public string gameCredits = "Credits";
 
     public void Play()
     {
@@ -24,6 +25,10 @@ public class MainMenu : MonoBehaviour
 
 
 
+    }
+    public void Credits()
+    {
+        SceneManager.LoadScene(gameCredits);
     }
 
     public void Quit()
