@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
 
     public GameObject deathEffect;
 
+    public AudioSource deathSound;
+
     [Header("Unity Stuff")]
     public Image healthBar;
 
@@ -58,6 +60,8 @@ public class Enemy : MonoBehaviour
         isDead = true;
 
         PlayerStats.Money += value;
+        deathSound = GetComponent<AudioSource>();
+        deathSound.Play();
 
         GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
@@ -65,6 +69,7 @@ public class Enemy : MonoBehaviour
         WaveSpawner.EnemiesAlive--;
 
         Destroy(gameObject);
+        
     }
 
     // Update is called once per frame

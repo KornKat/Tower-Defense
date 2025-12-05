@@ -117,9 +117,4 @@ public class WaveSpawner : MonoBehaviour
     {
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
     }
-
-    void SpawnSecondaryEnemy(GameObject enemy)
-    {
-        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
-    }
 }
