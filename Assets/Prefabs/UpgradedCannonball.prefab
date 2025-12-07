@@ -126,7 +126,7 @@ MonoBehaviour:
   damage: 300
   explosionRadius: 0
   impactEffect: {fileID: 1470420788944960472, guid: 943bba1badbeb9c47b1d5e0afeb14254, type: 3}
-  shotSound: {fileID: 0}
+  shotSound: {fileID: -4237950954210622120}
 --- !u!82 &-4237950954210622120
 AudioSource:
   m_ObjectHideFlags: 0
