@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: -5572181018946322583}
   m_Layer: 0
   m_Name: BatMovingTest
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,6 +282,7 @@ MonoBehaviour:
   damage: 1
   healthUI: {fileID: 8885406831025391657}
   deathEffect: {fileID: 1617982236163035045, guid: fbedc459ca515684cbd05529e9d2852d, type: 3}
+  introSound: {fileID: 0}
   healthBar: {fileID: 6737333677118673777}
 --- !u!1 &8885406831025391657
 GameObject:
